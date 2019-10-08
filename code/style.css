@@ -5,3 +5,72 @@ this can be used for the FAQ-accordion. read more here: https://www.w3schools.co
 .active + .answer {
   /* some styling here */
 }
+body {
+  color: #0072bb;
+  /* height: 100%; Why though? */
+  margin: 0; /*Så att bilden kommer ända upp*/
+  font-family: 'Montserrat', sans-serif;
+}
+header {
+  margin: 0;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("surfpic.jpg"); /*För att tona ner bilden lite*/
+  display: flex;
+  flex-direction: column;
+  height:600px;
+  background-position: center; /*Centrerar bilden vertikalt*/
+  background-repeat: no-repeat; /*Så att bilden bara syns en gång*/
+  background-size: cover; /* Minskar bilden*/
+  position: relative;
+}
+.menu p{
+background: white;
+opacity: 0.6;
+margin: 10px;
+display: inline;
+flex-direction: row;
+}
+.hero-text {
+  height: 310px;
+  margin: 100px 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /*För att sprida ut h1, p och h2*/
+  padding: 10px;
+  background:white;
+  opacity: 0.8;
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: 8px 10px #888888;
+}
+.hero-text p{
+  color:black;
+  margin: 10px;
+}
+h1 {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  text-transform: uppercase;
+}
+h2 {
+  border: 2px solid #0072bb;
+  border-radius: 5px;
+  font-family: "montserrat", sans-serif;
+  color: #0072bb;
+  font-size: 18px;
+  opacity: 1;
+  margin: 0 80px;
+}
+/*
+.open {
+background: #0072bb;
+color: white;
+border-radius: 5px;
+font-family: "montserrat", sans-serif;
+font-size: 18px;
+opacity: 1;
+margin: 0 80px;
+}
+*/
