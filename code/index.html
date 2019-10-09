@@ -28,8 +28,44 @@
         <p>Plan your SUP adventure today! We have award winning instructors and the best views in Europe, so what are
           you waiting for?</p>
         <div id="button" class="button">
-          <h2>Book now</h2>
+          <h2 class="book">Book now</h2>
         </div>
+        <form action="http://httpbin.org/anything" method="POST">
+          <button class="exitbutton" id="exitbutton">X</button>
+          <label> Number of people:
+            <select name="numberOfPeople" id="numberOfPeople" required>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value=">4">More than 4 people</option>
+            </select>
+          </label>
+          <label>Pick a date:
+            <input type="date" name="date" required>
+          </label>
+          <label>What time would you prefer:
+            <ul>
+              <li><input type="checkbox" name="time" value="morning"> Morning 10:00-12:00</li>
+              <li><input type="checkbox" name="time" value="mid-day"> Mid-day 12:00-14:00</li>
+              <li><input type="checkbox" name="time" value="afternoon"> Afternoon 14:00-16:00</li>
+              <li><input type="checkbox" name="time" value="sunset"> Sunset 19:00-21:00</li>
+            </ul>
+          </label>
+          <label>What's your name?
+            <input type="text" name="name" required>
+          </label>
+          <label>Your cellphone:
+            <input type="tel" name="telephoneNumber" required>
+          </label>
+          <label>E-mail:
+            <input type="email" name="email" required>
+          </label>
+          <label>Anything we should know of:
+            <input type="text" name="note" class="message">
+          </label>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </header>
@@ -37,16 +73,7 @@
   <!-- video or image as a header is cool :) -->
 
   <!-- Signup form -->
-  <form action="http://httpbin.org/anything" method="POST">
-    <input type="text" name="name">
-    <select name="numberOfPeople" id="numberOfPeople">
-      <option value="1">1 person</option>
-      <option value="2">2 people</option>
-      <option value="3">3 people</option>
-      <option value="4">4</option>
-      <option value=">4">More than 4 people</option>
-    </select>
-  </form>
+
 
   <section class="accordion">
     <!-- Accordion -->

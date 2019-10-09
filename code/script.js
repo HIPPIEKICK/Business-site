@@ -7,3 +7,13 @@ function toggle() {
 
 // Selects an HTML element, and calls a function which will be executed when the element is clicked.
 document.getElementById("button").onclick = toggle;
+
+/*
+const form = getElementById("form");
+const exitbutton = getElementById("exitbutton");
+
+function hideForm() {
+  document.getElementById("form").style.display = "none";
+}
+document.getElementById("exitbutton").onclick = hideForm;
+*/
