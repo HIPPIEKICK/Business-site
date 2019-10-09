@@ -17,3 +17,13 @@ function hideForm() {
 }
 document.getElementById("exitbutton").onclick = hideForm;
 */
+
+function toggleFAQ() {
+  this.classList.toggle("open");
+}
+
+// Selects an HTML element, and calls a function which will be executed when the element is clicked.
+document.getElementById("section1").onclick = toggleFAQ;
+document.getElementById("section2").onclick = toggleFAQ;
+document.getElementById("section3").onclick = toggleFAQ;
+document.getElementById("section4").onclick = toggleFAQ;
