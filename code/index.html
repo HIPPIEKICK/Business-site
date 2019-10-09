@@ -15,16 +15,19 @@
   <header>
     <div class="hero-image">
       <div class="menu">
-        <img src="logo.jpeg" alt="Picture of surfer girl">
-        <p>Navbar</p>
-        <p>menu lalala</p>
+        <a href="#">
+          <img src="logo.jpeg" alt="Picture of surfer girl">
+        </a>
+        <a href="#">
+          <p>About us</p>
+        </a>
       </div>
 
       <div class="hero-text">
         <h1>Stand Up Paddleboard<br> in Bled, slovenia</h1>
         <p>Plan your SUP adventure today! We have award winning instructors and the best views in Europe, so what are
           you waiting for?</p>
-        <div id="button">
+        <div id="button" class="button">
           <h2>Book now</h2>
         </div>
       </div>
@@ -34,6 +37,16 @@
   <!-- video or image as a header is cool :) -->
 
   <!-- Signup form -->
+  <form action="http://httpbin.org/anything" method="POST">
+    <input type="text" name="name">
+    <select name="numberOfPeople" id="numberOfPeople">
+      <option value="1">1 person</option>
+      <option value="2">2 people</option>
+      <option value="3">3 people</option>
+      <option value="4">4</option>
+      <option value=">4">More than 4 people</option>
+    </select>
+  </form>
 
   <section class="accordion">
     <!-- Accordion -->
