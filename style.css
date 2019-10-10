@@ -118,11 +118,13 @@ select{
 }
 .checkbox{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
   margin: 5px;
   border: 1px solid #0072bb;
   border-radius: 5px;
+  white-space: nowrap; /*So the text is one row and not two*/
+  padding:
 }
 form button{
   border: 2px solid #0072bb;
