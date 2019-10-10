@@ -116,6 +116,14 @@ select{
   width:100%;
   background: white;
 }
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 5px;
+  border: 1px solid #0072bb;
+  border-radius: 5px;
+}
 form button{
   border: 2px solid #0072bb;
   border-radius: 5px;
