@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 3: The Business Site</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Playfair+Display&display=swap"
+    rel="stylesheet">
+  <!-- dont forget to add a css file and link it here! -->
+</head>
+
+<body>
+  <header>
+    <div class="hero-image">
+      <div class="menu">
+        <a href="#">
+          <img src="logo.jpeg" alt="Picture of surfer girl">
+        </a>
+        <a href="#">
+          <p>About us</p>
+        </a>
+      </div>
+
+      <div class="hero-text">
+        <h1>Stand Up Paddleboard<br> in Bled, slovenia</h1>
+        <p>Plan your SUP adventure today! We have award winning instructors and the best views in Europe, so what are
+          you waiting for?</p>
+        <div id="button" class="button">
+          <h2 class="book">Book now</h2>
+        </div>
+        <form action="http://httpbin.org/anything" method="POST">
+          <button class="exitbutton" id="exitbutton">X</button>
+          <label> Number of people:
+            <select name="numberOfPeople" id="numberOfPeople" required>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value=">4">More than 4 people</option>
+            </select>
+          </label>
+          <label>Pick a date:
+            <input type="date" name="date" required>
+          </label>
+          <label>What time would you prefer:
+            <ul>
+              <li><input type="checkbox" name="time" value="morning"> Morning 10:00-12:00</li>
+              <li><input type="checkbox" name="time" value="mid-day"> Mid-day 12:00-14:00</li>
+              <li><input type="checkbox" name="time" value="afternoon"> Afternoon 14:00-16:00</li>
+              <li><input type="checkbox" name="time" value="sunset"> Sunset 19:00-21:00</li>
+            </ul>
+          </label>
+          <label>What's your name?
+            <input type="text" name="name" required>
+          </label>
+          <label>Your cellphone:
+            <input type="tel" name="telephoneNumber" required>
+          </label>
+          <label>E-mail:
+            <input type="email" name="email" required>
+          </label>
+          <label>Anything we should know:
+            <input type="text" name="note" class="message">
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- video or image as a header is cool :) -->
+
+  <!-- Signup form -->
+
+
+  <section class="accordion">
+    <!-- Accordion -->
+    <h1>FAQ</h1>
+
+    <div class="question" id="section1">What is Stand Up Paddling?</div>
+    <div class="answer1">
+      <p>It's a really fun sport where you stand on a board and paddle with a paddle!</p>
+    </div>
+
+    <div class="question" id="section2">If I've never done this before, is this suitable for me?</div>
+    <div class="answer2">
+      <p>Yes, yes, yes, even your grandmother could probably do it! As long as you can swim if (and I do say IF), you
+        fall in the water you should be fine and have so much fun on the water.</p>
+    </div>
+
+    <div class="question" id="section3">What should I bring?</div>
+    <div class="answer3">
+      <p>Swimming suit or training clothes for comfortability, sunscreen, sunhat and a sunny mood.</p>
+    </div>
+
+    <div class="question" id="section4">Where can I store my belongings?</div>
+    <div class="answer4">
+      <p>Our instructor has a waterproof bag where you can put your valuables, but the bag is not big so don't bring too
+        much! </p>
+    </div>
+
+  </section>
+  <script type="text/javascript" src="./script.js"></script>
+  <!-- dont forget to link the javascript file here! -->
+</body>
+
+</html>
