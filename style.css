@@ -55,7 +55,7 @@ margin: 20px;
 }
 .hero-text {
   /* height: 310px; */
-  margin: 50px 35px;
+  margin: 20px 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -98,6 +98,7 @@ form{
   border-radius: 2px;
   height:0px; /*TEST*/
   opacity:0;/*TEST*/
+  visibility: hidden;
 }
 .exitbutton{
   /* width: 26px; */
@@ -114,10 +115,6 @@ select{
   border: 1px solid #0072bb;
   width:100%;
   background: white;
-}
-ul{
-  list-style-type: none;
-  /* margin: 0; */
 }
 form button{
   border: 2px solid #0072bb;
@@ -141,6 +138,7 @@ form button{
   text-align: left;
   opacity:1;
   height:100%;
+  visibility: visible;
   transition: 1s;
   /* overflow: scroll; */
   /* some styling here */
