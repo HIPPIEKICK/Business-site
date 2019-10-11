@@ -173,7 +173,8 @@ form p{
 }*/
 
 .accordion{
-  padding:10px;
+  padding: 0 10px 30px 10px;
+  background-color: #00b0ea;
   /* display: flex; */
   /* flex-direction: column; */
 }
@@ -185,7 +186,7 @@ form p{
   border: 2px solid navy;
 }
 .answer1, .answer2, .answer3, .answer4{
-  background: #0073bb34;
+  background: white;
   /* margin: 0 10px; */
   padding:10px;
   display: none;
