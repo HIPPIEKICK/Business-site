@@ -88,7 +88,7 @@ h1 {
 background-color: #0072bb;
 color:white;
 }
-form{
+.bookingForm{
   display:flex;
   flex-direction: column;
   /* width: 400px; */
@@ -126,14 +126,14 @@ select{
   white-space: nowrap; /*So the text is one row and not two*/
   padding:
 }
-form button{
+.bookingForm button{
   border: 2px solid #0072bb;
   border-radius: 5px;
   font-family: "montserrat", sans-serif;
   color: #0072bb;
   font-size: 18px;
   opacity: 1; /*då blir det samma opacity som föräldern*/
-  margin: 0 80px;
+  /* margin: 0 20px; */
 }
 .message{
   height: 100px;
@@ -143,7 +143,7 @@ form button{
   opacity:0;
   height:0;
 }
-.active + form {
+.active + .bookingForm {
   display:flex;
   text-align: left;
   opacity:1;
@@ -219,7 +219,21 @@ form p{
     font-size: 16px;
     text-transform: uppercase;
   }
-  
+  .newsletter div{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .newsletter button, .newsletter input{
+    margin: 0 0 0 5px;
+    border: 2px solid #0072bb;
+  border-radius: 5px;
+  font-family: "montserrat", sans-serif;
+  color: #0072bb;
+  font-size: 12px;
+  padding: 5px;
+  }
+
   /***FOOTER***/
   footer {
     background-color: #00b0ea;
@@ -249,5 +263,5 @@ form p{
 
 /***DESKTOP***/
 @media (min-width: 1025px){
-  
+
 }

@@ -28,9 +28,9 @@
         <p>Plan your SUP adventure today! We have award winning instructors and the best views in Europe, so what are
           you waiting for?</p>
         <div id="button" class="button">
-          <h2 class="book">Book now</h2>
+          <h2>Book now</h2>
         </div>
-        <form action="http://httpbin.org/anything" method="POST">
+        <form class="bookingForm" action="http://httpbin.org/anything" method="POST">
           <button class="exitbutton" id="exitbutton">X</button>
           <label> Number of people:
             <select name="numberOfPeople" id="numberOfPeople" required>
@@ -111,7 +111,12 @@
     <img src="logo.jpeg" alt="Surfer-girl">
     <h2>Sign up for sup <br>news & updates</h2>
     <p>Get the latest info straight to your inbox!</p>
-
+    <form class="signUp" action="http://httpbin.org/anything" method="POST">
+      <div>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <button type="submit">Hook me up!</button>
+      </div>
+    </form>
   </section>
 
   <footer>
