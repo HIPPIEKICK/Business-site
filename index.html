@@ -23,55 +23,87 @@
         </a>
       </div>
 
-      <div class="hero-text">
-        <h1>Stand Up Paddleboard<br> in Bled, slovenia</h1>
-        <p>Plan your SUP adventure today! We have award winning instructors and the best views in Europe, so what are
-          you waiting for?</p>
-        <div id="button" class="button">
-          <h2>Book now</h2>
+      <div class="tablet-view">
+        <div class="hero-text">
+          <h1>Stand Up Paddleboard<br> in Bled, slovenia</h1>
+          <p>Plan your SUP adventure today! We have award winning instructors and the best views in Europe, so what are
+            you waiting for?</p>
+          <div id="button" class="button">
+            <h2>Book now</h2>
+          </div>
+          <form class="bookingForm" action="http://httpbin.org/anything" method="POST">
+            <button class="exitbutton" id="exitbutton">X</button>
+            <label> Number of people:
+              <select name="numberOfPeople" id="numberOfPeople" required>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value=">4">More than 4 people</option>
+              </select>
+            </label>
+            <label>Pick a date:
+              <input type="date" name="date" required>
+            </label>
+            <label>What time would you prefer:
+              <div class="checkbox">
+                <input type="checkbox" name="time" value="morning"> Morning 10:00-12:00
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="time" value="mid-day"> Mid-day 12:00-14:00
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="time" value="afternoon"> Afternoon 14:00-16:00
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="time" value="sunset"> Sunset 19:00-21:00
+              </div>
+            </label>
+            <label>What's your name?
+              <input type="text" name="name" required>
+            </label>
+            <label>Your cellphone:
+              <input type="tel" name="telephoneNumber" required>
+            </label>
+            <label>E-mail:
+              <input type="email" name="email" required>
+            </label>
+            <label>Anything we should know:
+              <input type="text" name="note" class="message">
+            </label>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <form class="bookingForm" action="http://httpbin.org/anything" method="POST">
-          <button class="exitbutton" id="exitbutton">X</button>
-          <label> Number of people:
-            <select name="numberOfPeople" id="numberOfPeople" required>
-              <option value="1">1 person</option>
-              <option value="2">2 people</option>
-              <option value="3">3 people</option>
-              <option value="4">4 people</option>
-              <option value=">4">More than 4 people</option>
-            </select>
-          </label>
-          <label>Pick a date:
-            <input type="date" name="date" required>
-          </label>
-          <label>What time would you prefer:
-            <div class="checkbox">
-              <input type="checkbox" name="time" value="morning"> Morning 10:00-12:00
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" name="time" value="mid-day"> Mid-day 12:00-14:00
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" name="time" value="afternoon"> Afternoon 14:00-16:00
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" name="time" value="sunset"> Sunset 19:00-21:00
-            </div>
-          </label>
-          <label>What's your name?
-            <input type="text" name="name" required>
-          </label>
-          <label>Your cellphone:
-            <input type="tel" name="telephoneNumber" required>
-          </label>
-          <label>E-mail:
-            <input type="email" name="email" required>
-          </label>
-          <label>Anything we should know:
-            <input type="text" name="note" class="message">
-          </label>
-          <button type="submit">Submit</button>
-        </form>
+
+        <section class="accordion">
+          <!-- Accordion -->
+          <h1>FAQ</h1>
+          <div class="question" id="section1">What is Stand Up Paddling?</div>
+          <div class="answer1">
+            <p>It's a really fun sport where you stand on a board and paddle with a paddle!</p>
+          </div>
+
+          <div class="question" id="section2">If I've never done this before, is this suitable for me?</div>
+          <div class="answer2">
+            <p>Yes, yes, yes, even your grandmother could probably do it! As long as you can swim if (and I do say IF),
+              you
+              fall in the water you should be fine and have so much fun on the water.</p>
+          </div>
+
+          <div class="question" id="section3">What should I bring?</div>
+          <div class="answer3">
+            <p>Swimming suit or training clothes for comfortability, sunscreen, sunhat and a sunny mood.</p>
+          </div>
+
+          <div class="question" id="section4">Where can I store my belongings?</div>
+          <div class="answer4">
+            <p>Our instructor has a waterproof bag where you can put your valuables, but the bag is not big so don't
+              bring
+              too
+              much! </p>
+          </div>
+        </section>
+
       </div>
     </div>
   </header>
@@ -81,32 +113,7 @@
   <!-- Signup form -->
 
 
-  <section class="accordion">
-    <!-- Accordion -->
-    <h1>FAQ</h1>
-    <div class="question" id="section1">What is Stand Up Paddling?</div>
-    <div class="answer1">
-      <p>It's a really fun sport where you stand on a board and paddle with a paddle!</p>
-    </div>
 
-    <div class="question" id="section2">If I've never done this before, is this suitable for me?</div>
-    <div class="answer2">
-      <p>Yes, yes, yes, even your grandmother could probably do it! As long as you can swim if (and I do say IF), you
-        fall in the water you should be fine and have so much fun on the water.</p>
-    </div>
-
-    <div class="question" id="section3">What should I bring?</div>
-    <div class="answer3">
-      <p>Swimming suit or training clothes for comfortability, sunscreen, sunhat and a sunny mood.</p>
-    </div>
-
-    <div class="question" id="section4">Where can I store my belongings?</div>
-    <div class="answer4">
-      <p>Our instructor has a waterproof bag where you can put your valuables, but the bag is not big so don't bring
-        too
-        much! </p>
-    </div>
-  </section>
   <section class="newsletter">
     <img src="logo.jpeg" alt="Surfer-girl">
     <h2>Sign up for sup <br>news & updates</h2>

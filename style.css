@@ -15,7 +15,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("surfpic.jpg"); /*För att tona ner bilden lite*/
   display: flex;
   flex-direction: column;
-  height:520px;
+  height:700px;
   width: 100%;
   background-position: center; /*Centrerar bilden vertikalt*/
   background-repeat: no-repeat; /*Så att bilden bara syns en gång*/
@@ -55,7 +55,7 @@ margin: 20px;
 }
 .hero-text {
   /* height: 310px; */
-  margin: 5px 15px 10px 15px;
+  margin: 5px 15px 50px 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -208,7 +208,7 @@ form p{
   flex-direction: column;
   align-items: center;
   font-size: 12px;
-  height:160px;
+  margin:15px 0;
   }
   .newsletter img {
     height: 55px;
@@ -239,12 +239,12 @@ form p{
   /***FOOTER***/
   footer {
     background-color: #00b0ea;
-    font-size: 12px;
+    font-size: 10px;
     color: navy;
     height: 100px;
     display: flex; /*To center*/
     align-items: center; /*vertikal centrering*/
-    margin: 50px 0 0 0 ; /*margin uppåt*/
+    margin: 0;
   }
   footer img{
   width: 80px;
@@ -260,7 +260,27 @@ form p{
 
 /***TABLET***/
 @media (min-width: 668px) and (max-width: 1024px){
+.hero-text{
+  color: magenta;
+  width: 50%;
+}
+.accordion{
+  flex: 1;
+  margin: 0 20px 0 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; För att sprida ut h1, p och h2 */
+  /* padding: 10px; */
+  background:rgba(255, 255, 255, 0.795);
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: 8px 10px #888888;
 
+
+}
+.tablet-view{
+  display:flex;
+}
 }
 
 /***DESKTOP***/
