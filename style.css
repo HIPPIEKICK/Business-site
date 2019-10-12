@@ -15,7 +15,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("surfpic.jpg"); /*För att tona ner bilden lite*/
   display: flex;
   flex-direction: column;
-  height:700px;
+  height:550px;
   width: 100%;
   background-position: center; /*Centrerar bilden vertikalt*/
   background-repeat: no-repeat; /*Så att bilden bara syns en gång*/
@@ -175,6 +175,7 @@ form p{
 .accordion{
   padding: 0 10px 30px 10px;
   background-color: #00b0ea;
+  margin:0;
   /* display: flex; */
   /* flex-direction: column; */
 }
@@ -208,7 +209,7 @@ form p{
   flex-direction: column;
   align-items: center;
   font-size: 12px;
-  margin:15px 0;
+  margin:5px 0 0 0;
   }
   .newsletter img {
     height: 55px;
@@ -243,13 +244,15 @@ form p{
     color: navy;
     height: 100px;
     display: flex; /*To center*/
-    align-items: center; /*vertikal centrering*/
-    margin: 0;
+    align-items: center; /*vertical center */
+    margin: 10px 0 0 0;
   }
+
   footer img{
   width: 80px;
   margin: 20px;
   }
+
   footer a{
   text-decoration: none;
   }
@@ -260,30 +263,67 @@ form p{
 
 /***TABLET***/
 @media (min-width: 668px) and (max-width: 1024px){
-.hero-text{
-  color: magenta;
-  width: 50%;
-}
-.accordion{
-  flex: 1;
-  margin: 0 20px 0 0;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-around; För att sprida ut h1, p och h2 */
-  /* padding: 10px; */
-  background:rgba(255, 255, 255, 0.795);
-  border: 1px solid grey;
-  border-radius: 3px;
-  box-shadow: 8px 10px #888888;
-
-
+  .hero-image{
+    /* height: 50%; */
+  }
+  .hero-text{;
+  width: 270px;
+  align-self: center;
 }
 .tablet-view{
   display:flex;
 }
+.accordion{
+  background-color: white;
+  width: 60%;
+}
+.newsletter{
+  margin: 10px;
+}
+.active + .bookingForm{
+  width: 400px;
+  align-self: center;
+}
+
+
+.open + .answer1, .open + .answer2, .open + .answer3, .open + .answer4{
+  height:auto;
+  background-color: #00b0ea;
+  color: navy;
+}
+
 }
 
 /***DESKTOP***/
 @media (min-width: 1025px){
+  .hero-image{
+    /* height: 50%; */
+  }
+  .hero-text{;
+  width: 570px;
+  align-self: center;
+}
+.tablet-view{
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.accordion{
+  background-color: white;
+flex: 1;
+}
+.newsletter{
+  margin: 20px 50px 20px 20px;
+}
+.active + .bookingForm{
+  width: 400px;
+  align-self: center;
+}
+
+
+.open + .answer1, .open + .answer2, .open + .answer3, .open + .answer4{
+  height:auto;
+}
+
 
 }
