@@ -4,7 +4,8 @@ this can be used for the FAQ-accordion. read more here: https://www.w3schools.co
 
 body {
   color: #0072bb;
-  /* height: 100%; Why though? */
+  height: 100%;
+  min-height: 100%; /*So the footer can stay in the bottom*/
   margin: 0; /*Så att bilden kommer ända upp*/
   font-family: 'Montserrat', sans-serif;
 }
@@ -40,19 +41,13 @@ font-size: 18px;
 opacity: 1;
 margin: 20px;
 }
-.menu p:hover{
-  background-color: #0073bb00;
-  color:
-}
+
 .menu img {
   height: 55px;
   border-radius: 50%;
   padding: 10px;
 }
-.menu img:hover{
-  height: 65px;
-  padding:5px;
-}
+
 .hero-text {
   /* height: 310px; */
   margin: 5px 15px 50px 15px;
@@ -64,7 +59,7 @@ margin: 20px;
   background:rgba(255, 255, 255, 0.795);
   border: 1px solid grey;
   border-radius: 3px;
-  box-shadow: 8px 10px #888888;
+  box-shadow: 8px 10px rgba(128, 128, 128, 0.795);
 }
 .hero-text p{
   color:black;
@@ -84,10 +79,7 @@ h1 {
   opacity: 1; /*då blir det samma opacity som föräldern*/
   margin: 0 50px;
 }
-.button:hover {
-background-color: #0072bb;
-color:white;
-}
+
 .bookingForm{
   display:flex;
   flex-direction: column;
@@ -140,8 +132,6 @@ select{
   width: 100%;
 }
 .active{
-  opacity:0;
-  height:0;
 }
 .active + .bookingForm {
   display:flex;
@@ -245,7 +235,7 @@ form p{
     height: 100px;
     display: flex; /*To center*/
     align-items: center; /*vertical center */
-    margin: 10px 0 0 0;
+    margin-top: 10px;
   }
 
   footer img{
@@ -299,6 +289,18 @@ form p{
   .hero-image{
     /* height: 50%; */
   }
+  .menu img:hover{
+    height: 65px;
+    padding:5px;
+  }
+  .menu p:hover{
+    background-color: #0073bb00;
+    color:
+  }
+  .button:hover {
+    background-color: #0072bb;
+    color:white;
+    }
   .hero-text{;
   width: 570px;
   align-self: center;
