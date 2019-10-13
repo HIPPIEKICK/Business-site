@@ -65,6 +65,9 @@ box-shadow: 4px 4px 2px 0px rgba(30, 30, 30, 0.75);
   border: 1px solid grey;
   border-radius: 3px;
   box-shadow: 10px 10px 5px 0px rgba(30, 30, 30, 0.75);
+  position: absolute; /*Because safari didn't like my form*/
+  top: 100px;
+
 }
 .hero-text p{
   color:black;
@@ -139,7 +142,7 @@ select{
 .active{
 }
 .active + .bookingForm {
-  display:flex;
+  display:block;
   text-align: left;
   opacity:1;
   height:100%;
@@ -264,6 +267,7 @@ form p{
   .hero-text{;
   width: 270px;
   align-self: center;
+  top: 80px;
 }
 .tablet-view{
   display:flex;
