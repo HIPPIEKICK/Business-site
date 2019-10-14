@@ -1,17 +1,14 @@
-/* the + sign is used to select the sibling that comes immediately next to the element you selected.
-in this case it is the div with the answer class next to the div with the active class.
-this can be used for the FAQ-accordion. read more here: https://www.w3schools.com/css/css_combinators.asp */
-
 body {
   color: #0072bb;
   height: 100%;
-  min-height: 100%; /*So the footer can stay in the bottom*/
-  margin: 0; /*Så att bilden kommer ända upp*/
+  margin: 0; /*So that hero-image is all the way up*/
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+/***HEADER***/
 header {
   margin: 0;
 }
@@ -21,10 +18,10 @@ header {
   flex-direction: column;
   height:550px;
   width: 100%;
-  background-position: center; /*Centrerar bilden vertikalt*/
-  background-repeat: no-repeat; /*Så att bilden bara syns en gång*/
-  background-size: cover; /* Minskar bilden*/
-  position: relative;
+  background-position: center; /*Centers the image vertically*/
+  background-repeat: no-repeat; /*The image should only be shown once*/
+  background-size: cover; /*Makes the image fit*/
+  /* position: relative; */
 }
 .menu{
   display: flex;
@@ -33,19 +30,21 @@ header {
 a {
   text-decoration: none;
 }
+
+/***HEADER - about us***/
 .menu p{
-border: 2px solid white;
-border-radius: 5px;
-font-family: "montserrat", sans-serif;
-color: white;
-padding: 5px;
-background-color: #0072bb;
-font-size: 18px;
-opacity: 1;
-margin: 20px;
-box-shadow: 4px 4px 2px 0px rgba(30, 30, 30, 0.75);
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: "montserrat", sans-serif;
+  color: white;
+  padding: 5px;
+  background-color: #0072bb;
+  font-size: 18px;
+  margin: 20px;
+  box-shadow: 4px 4px 2px 0px rgba(30, 30, 30, 0.75);
 }
 
+/***HEADER - logo***/
 .menu img {
   height: 55px;
   border-radius: 50%;
@@ -53,22 +52,20 @@ box-shadow: 4px 4px 2px 0px rgba(30, 30, 30, 0.75);
   box-shadow: 4px 4px 2px 0px rgba(30, 30, 30, 0.75);
 }
 
+/***HEADER - white card***/
 .hero-text {
-  /* height: 310px; */
   margin: 5px 15px 50px 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /*För att sprida ut h1, p och h2*/
   padding: 10px;
   background:rgba(255, 255, 255, 0.795);
-  border: 1px solid grey;
   border-radius: 3px;
   box-shadow: 10px 10px 5px 0px rgba(30, 30, 30, 0.75);
   position: absolute; /*Because safari didn't like my form*/
   top: 100px;
-
 }
+
 .hero-text p{
   color:black;
   margin: 10px;
@@ -84,27 +81,22 @@ h1 {
   font-family: "montserrat", sans-serif;
   color: #0072bb;
   font-size: 18px;
-  opacity: 1; /*då blir det samma opacity som föräldern*/
   margin: 0 50px;
 }
 
+/***FORM***/
 .bookingForm{
   display:flex;
   flex-direction: column;
-  /* width: 400px; */
   background:azure;
   padding: 10px;
   border: 2px solid #0072bb;
-  border-radius: 2px;
-  height:0px; /*TEST*/
-  opacity:0;/*TEST*/
+  border-radius: 5px;
+  height:0px; /*So the form doesn't take up any space when it's not open*/
   visibility: hidden;
 }
-.exitbutton{
-  /* width: 26px; */
-}
 label{
-  margin: 8px;
+  margin: 8px 0;
 }
 input{
   border: 1px solid #0072bb;
@@ -118,13 +110,11 @@ select{
 }
 .checkbox{
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: flex-start; */
-  margin: 5px;
+  align-items: left;
+  margin: 5px 0;
   border: 1px solid #0072bb;
   border-radius: 5px;
   white-space: nowrap; /*So the text is one row and not two*/
-  padding:
 }
 .bookingForm button{
   border: 2px solid #0072bb;
@@ -132,14 +122,11 @@ select{
   font-family: "montserrat", sans-serif;
   color: #0072bb;
   font-size: 18px;
-  opacity: 1; /*då blir det samma opacity som föräldern*/
-  /* margin: 0 20px; */
+  margin: 8px 0 0 0;
 }
 .message{
-  height: 100px;
+  height: 80px;
   width: 100%;
-}
-.active{
 }
 .active + .bookingForm {
   display:block;
@@ -147,50 +134,25 @@ select{
   opacity:1;
   height:100%;
   visibility: visible;
-  transition: 1s;
-  /* overflow: scroll; */
-  /* some styling here */
-}
-/*
-.exitbutton {
-  padding: 0;
-  width:24px;
-  margin: 0;
-  /*display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  background: #0072bb;
 }
 
-form p{
-  background: #0072bb;
-  padding: 2px;
-  border-radius: 2px;
-  justify-self: right;
-  width:12px;
-}*/
-
+/***FAQ-accordion***/
 .accordion{
   padding: 0 10px 30px 10px;
   background-color: #00b0ea;
   margin:0;
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 .question {
   background: #0072bb;
   color: white;
-  /* margin: 0 10px; */
   padding:10px;
   border: 2px solid navy;
 }
 .answer1, .answer2, .answer3, .answer4{
   background: white;
-  /* margin: 0 10px; */
   padding:10px;
   display: none;
   height:0;
-  opacity: 0;
 }
 .open {
   background: navy;
@@ -198,7 +160,6 @@ form p{
 .open + .answer1, .open + .answer2, .open + .answer3, .open + .answer4{
   display: flex;
   height:100%;
-  opacity: 1;
 }
 
 /***NEWSLETTER***/
@@ -224,7 +185,6 @@ form p{
     display: flex;
     flex-direction: row;
   }
-
   .newsletter button, .newsletter input{
     margin: 0 0 0 5px;
     border: 2px solid #0072bb;
@@ -245,14 +205,12 @@ form p{
     align-items: center; /*vertical center */
     margin-top: 10px;
   }
-
   footer img{
-  width: 80px;
-  margin: 20px;
+    width: 80px;
+    margin: 20px;
   }
-
   footer a{
-  text-decoration: none;
+    text-decoration: none;
   }
 
   /***MEDIA QUERIES***/
@@ -261,80 +219,70 @@ form p{
 
 /***TABLET***/
 @media (min-width: 668px) and (max-width: 1024px){
-  .hero-image{
-    /* height: 50%; */
+  .hero-text{
+    width: 270px;
+    align-self: center;
+    top: 80px;
   }
-  .hero-text{;
-  width: 270px;
-  align-self: center;
-  top: 80px;
-}
-.tablet-view{
-  display:flex;
-}
-.accordion{
-  background-color: white;
-  width: 60%;
-}
-.newsletter{
-  margin: 10px;
-}
-.active + .bookingForm{
-  width: 400px;
-  align-self: center;
-}
-
-
-.open + .answer1, .open + .answer2, .open + .answer3, .open + .answer4{
-  height:auto;
-  background-color: #00b0ea;
-  color: navy;
-}
+  .active + .bookingForm{
+    width: 400px;
+    align-self: center;
+  }
+  .tablet-view{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .accordion{
+    background-color: white;
+    width: 60%;
+  }
+  .open + .answer1, .open + .answer2, .open + .answer3, .open + .answer4{
+    height:auto;
+    background-color: #00b0ea;
+    color: navy;
+  }
+  .newsletter{
+    margin: 10px;
+  }
 
 }
 
 /***DESKTOP***/
 @media (min-width: 1025px){
-  .hero-image{
-    /* height: 50%; */
-  }
   .menu img:hover{
     height: 65px;
     padding:5px;
   }
   .menu p:hover{
-    background-color: #0073bb00;
-    color:
+    background-color: rgba(0, 0, 0, 0);
   }
   .button:hover {
     background-color: #0072bb;
     color:white;
     }
-  .hero-text{;
-  width: 570px;
-  align-self: center;
-}
-.tablet-view{
-  display:flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-.accordion{
-  background-color: white;
-flex: 1;
-}
-.newsletter{
-  margin: 20px 50px 20px 20px;
-}
-.active + .bookingForm{
-  width: 400px;
-  align-self: center;
-}
-
-
-.open + .answer1, .open + .answer2, .open + .answer3, .open + .answer4{
-  height:auto;
-}
-
-
+  .hero-text{
+    width: 570px;
+    align-self: center;
+  }
+  .active + .bookingForm{
+    width: 400px;
+    align-self: center;
+  }
+  .tablet-view{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .accordion{
+    background-color:white;
+    flex: 1;
+  }
+  .open + .answer1, .open + .answer2, .open + .answer3, .open + .answer4{
+    height:auto;
+    background-color: azure;
+  }
+  .newsletter{
+    margin: 20px 50px 20px 20px;
+  }
 }
