@@ -1,5 +1,5 @@
 # Project 3 - Business Site
-My first time making a form, using JavaScript and hero image. I chose to toggle the form between open/closed and I also made an accordion for the FAQ.
+My first time making a form, using JavaScript and hero image. I chose to toggle the form between open/closed and I also made an accordion for the FAQ. Here's the deployed site: https://project-3-business-site-hippiekick.netlify.com/
 
 
 ## Learning Objectives
